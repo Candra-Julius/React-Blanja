@@ -1,0 +1,23 @@
+.input{
+    display:flex;
+    flex-direction:row;
+    justify-content: start ;
+    align-items: center;
+    color:#9B9B9B;
+}
+.label{
+    margin-right: 40px;
+    width: 120px;
+    /* background-color: aqua; */
+    text-align:right;
+}
+.input input{
+    border: 1px solid #9B9B9B;
+    border-radius: 4px;
+    width:320px;
+    height:40px;
+    margin-top:8px;
+    padding:20px;
+    margin-bottom: 30px;
+    color: #9B9B9B;
+}

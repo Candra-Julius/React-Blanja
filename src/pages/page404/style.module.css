@@ -1,0 +1,14 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Metropolis';
+    background-color: #E5E5E5;
+}
+.container {
+    padding-top: 100px;
+    width: 75%;
+    margin:auto;
+    /* height: 1045px; */
+    display:flex;
+    flex-direction: column;
+}

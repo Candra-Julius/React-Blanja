@@ -1,0 +1,127 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Metropolis';
+    background-color: #F5F5F5;
+}
+.container {
+    padding-top: 60px;
+    height:2000px;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+}
+.sect1{
+    padding-top: 100px;
+    padding-left: 12.5%;
+    padding-right: 48px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profileImg{
+    width:61px;
+    border-radius: 50%;
+}
+.textProfile{
+    margin-left: 10px;
+}
+.textProfile p{
+    display: flex;
+    font-size: 17px;
+    flex-direction: column;
+    align-items: center;
+}
+.sect2{
+    padding-right: 10%;
+}
+.subSect{
+    background-color: #fff;
+    width: 800px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    margin-top:25px;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(173, 173, 173, 0.25)
+}
+.subSect p{
+    font-size: 20px;
+    font-weight: 1000;
+}
+.line{
+    border:1px solid #d4d4d4;
+    margin-top:30px;
+    margin-bottom:30px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stock{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.legend{
+    font-size: 14px;
+    color: #9b9b9b;
+}
+.radio{
+    color: #9b9b9b;
+    margin-top:14px;
+    margin-left:40px;
+    font-size: 14px;
+}
+.upload label {
+    cursor: pointer;
+    margin: auto;
+    border: 1px solid #9B9B9B;
+    border-radius: 24px;
+    width: 160px;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #9B9B9B;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    transition: 500ms;
+    /* Style as you please, it will become the visible UI component. */
+}
+.upload label:hover{
+    transform: translateY(8px);
+}
+.uploadPhoto {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.upload{
+    display:flex;
+}
+.desc{
+    margin:0;
+    border:1px solid #9B9B9B;
+    border-radius: 5px ;
+    width:644px;
+    height:250px;
+}
+.submit{
+    width:90%;
+    display:flex;
+    justify-content: end;
+    transition: 500ms;
+}
+.submitButt{
+    background-color: #DB3022;
+    border-radius: 25px;
+    
+}
+.submit:hover{
+    transform: translateY(8px)
+}

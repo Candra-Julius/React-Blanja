@@ -1,0 +1,81 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Metropolis';
+    background-color: white;
+}
+.container {
+    padding-top: 100px;
+    width: 100%;
+    /* height: 1vh; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+.logo span {
+    color: #DB3022;
+    font-size: 25px;
+    font-weight: 900;
+}
+.role {
+    display: flex;
+    justify-content: center;
+}
+.role button {
+    width:123px;
+    height:40px;
+    margin:0px;
+}
+.custbut{
+    border-radius: 4px 0 0 4px;
+    color:#9B9B9B;
+    border:1px solid #9B9B9B;
+}
+.custbut:focus{
+    background-color: #DB3022;
+    color:white
+}
+.sellbut{
+    color:#9B9B9B;
+    border:1px solid #9B9B9B;
+    border-radius: 0 4px 4px 0;
+}
+.sellbut:focus {
+    background-color: #DB3022;
+    color:white
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form ul li input {
+    width: 400px;
+    margin-top:16px;
+    border-radius: 4px;
+    border:1px solid #9B9B9B;
+    margin-right: 40px;
+    height:48px;
+}
+form .button {
+    background-color: #DB3022;
+    border:1px solid #DB3022;
+    border-radius: 25px;
+    color: white;
+    width: 400px;
+    padding-top:14px;
+    padding-bottom: 14px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+Link {
+    color:#DB3022;
+    text-decoration: none;
+}

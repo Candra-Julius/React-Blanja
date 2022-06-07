@@ -1,0 +1,147 @@
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Metropolis';
+    background-color: #F5F5F5;
+}
+.container {
+    padding-top: 60px;
+    height:850px;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+}
+.sect1{
+    padding-top: 100px;
+    padding-left: 12.5%;
+    padding-right: 48px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profileImg{
+    width:61px;
+    border-radius: 50%;
+}
+.textProfile{
+    margin-left: 10px;
+}
+.textProfile p{
+    display: flex;
+    font-size: 17px;
+    flex-direction: column;
+    align-items: center;
+}
+.sect2{
+    padding-right: 10%;
+}
+.subSect{
+    background-color: #fff;
+    width: 800px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    margin-top:25px;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px rgba(173, 173, 173, 0.7)
+}
+.subSect h2{
+    font-size: 25px;
+    font-weight: 1000;
+}
+.subSect p {
+    font-size: 14px;
+    color: #9b9b9b;
+}
+.line{
+    border:1px solid #d4d4d4;
+    margin-top:30px;
+    margin-bottom:30px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+
+}
+.genderRadio{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.legend{
+    width: 120px;
+    /* background-color: brown; */
+    text-align:right;
+    margin-right: 40px;
+    color:#9B9B9B;
+    font-size: 16px;
+}
+.gender{
+    /* background-color: blue; */
+    display:flex;
+    flex-direction: row;
+    color:#9B9B9B;
+}
+.radio{
+    margin-right: 36px;
+}
+.lineV {
+    border:1px solid #d4d4d4;
+    margin-left:30px;
+    margin-right:30px;
+    height:166px;
+    margin-top: 34px;
+    margin-bottom: auto;
+}
+.ava{
+    /* background-color: chocolate; */
+    width:100%
+}
+.upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upload label {
+    cursor: pointer;
+    margin: auto;
+    border: 1px solid #9B9B9B;
+    border-radius: 24px;
+    width: 136px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #9B9B9B;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    transition: 500ms;
+    /* Style as you please, it will become the visible UI component. */
+}
+.upload label:hover{
+    transform: translateY(8px);
+}
+.upload img {
+    border-radius: 50%;
+    width:111px;
+    margin-bottom: 20px;
+}
+.uploadPhoto {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.button {
+    margin-left: 160px;
+}

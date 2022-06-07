@@ -1,0 +1,27 @@
+const initialState = {
+    user: {
+        fullname: '',
+        email: '',
+        role: '',
+    },
+    isLoading:false
+}
+
+const userReducer = (state = initialState, action) => {
+    if(action.type === 'USER_LOGIN_PENDDING'){
+        return{
+            ...state,
+            isLoading: true
+        }
+    }else if(action.type === 'USER_LOGIN_SUCCESS'){
+        return{
+            ...state,
+            user: action.payload,
+            isLoading: false
+        }
+    }else{
+        return state
+    }
+}
+
+export default userReducer
