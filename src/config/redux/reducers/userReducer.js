@@ -3,11 +3,12 @@ const initialState = {
         fullname: '',
         email: '',
         role: '',
+        password: ''
     },
     isLoading:false
 }
 
-const userReducer = (state = initialState, action) => {
+export const userReducer = (state = initialState, action) => {
     if(action.type === 'USER_LOGIN_PENDDING'){
         return{
             ...state,
@@ -24,4 +25,19 @@ const userReducer = (state = initialState, action) => {
     }
 }
 
-export default userReducer
+export const registerReducer = (state = initialState, action) => {
+    if(action.type === 'REGISTER_PENDING'){
+        return{
+            ...state,
+            isLoading: true
+        }
+    }else if(action.type === 'REGISTER_SUCCESS'){
+        return{
+            ...state,
+            user: action.payload,
+            isLoading: false
+        }
+    }else{
+        return state
+    }
+}

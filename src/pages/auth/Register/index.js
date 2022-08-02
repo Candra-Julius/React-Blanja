@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import {useDispatch} from 'react-redux'
 import style from "./style.module.css";
-import axios from "axios";
+// import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import logo from "../img/Vector.png"
+import { register } from "../../../config/redux/action/userAction";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -10,6 +12,7 @@ const Register = () => {
   const [fullname, setFullname] = useState("");
   const [role, setRole] = useState("")
   const navigate = useNavigate();
+  const dispatch = useDispatch()
   
   const handleRegister = (e) => {
     e.preventDefault();
@@ -20,16 +23,17 @@ const Register = () => {
       role,
     };
     console.log(data);
-    axios
-      .post("http://localhost:4000/v1/users/register", data)
-      .then((res) => {
-        alert('un berhasil dibuat, silakan cek email anda')
-      navigate('/login')
-      })
-      .catch((e) => {
-        console.log(e);
-        alert("Registrasi gagal");
-      });
+    dispatch(register(data, navigate))
+    // axios
+    //   .post("http://localhost:4000/v1/users/register", data)
+    //   .then((res) => {
+    //     alert('un berhasil dibuat, silakan cek email anda')
+    //   navigate('/login')
+    //   })
+    //   .catch((e) => {
+    //     console.log(e);
+    //     alert("Registrasi gagal");
+    //   });
   };
   return (
     <div className={style.container}>

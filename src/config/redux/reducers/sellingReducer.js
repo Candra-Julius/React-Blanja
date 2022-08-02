@@ -2,7 +2,7 @@ const initialState = {
     product: {
         name: "",
         stock: "",
-        photo: "",
+        photo: [],
         price: "",
         status: "",
         desc: ""

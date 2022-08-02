@@ -7,16 +7,19 @@ import Button from "../../component/button";
 // import { useDispatch } from "react-redux";
 // import { selling } from "../../config/redux/action/sellingAction";
 import NavBar from "../../component/navbar";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from '../../config/axios'
 
-const SellingProd = () => {
+const EditProduct = () => {
   const navigate = useNavigate()
+  const {id} = useParams()
   // const dispacth = useDispatch()
+  const [initial, setInitial] = useState('')
   const [photo, setPhoto] = useState([])
   const [formProduct, setFormProduct] = useState({
     name: "",
     stock: "",
+    photo: "",
     price: "",
     status: "",
     desc:""
@@ -37,20 +40,34 @@ const SellingProd = () => {
     async function postData(dataForm) {
       try {
         await axios({
-          method: 'POST',
-          url:'/product', 
+          method: 'PUT',
+          url:`/product/${id}`, 
           data: dataForm
         })
       } catch (error) {
         console.log(error);
       }
     }
-    useEffect(() => {
-    fetchData()
-    }, [])
+
   const handlePhoto = (e) => {
     setPhoto(e.target.files[0])
   }
+  async function initialData(){
+    try {
+      const result = await axios({
+        method: 'GET',
+        url: `/product/${id}`
+      })
+      console.log(result.data.result);
+      setInitial(result.data.result)
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(() => {
+    fetchData()
+    initialData()
+    }, [])
   const handleChange = (e) => {
     setFormProduct({
       ...formProduct,
@@ -60,7 +77,8 @@ const SellingProd = () => {
   useEffect(()=>{
     console.log(formProduct);
     console.log(photo);
-  },[photo, formProduct])
+    console.log(initial.name);
+  },[photo, formProduct, initial])
   const handleProduct = (e) => {
     e.preventDefault();
     const formData = new FormData()
@@ -74,7 +92,7 @@ const SellingProd = () => {
     // console.log(formData.getAll)
     postData(formData)
     alert('barang berhasil dijual')
-    // navigate('/')
+    navigate('/')
   };
 
   return (
@@ -104,17 +122,18 @@ const SellingProd = () => {
             <p>Inventory</p>
             <div className={style.line} />
             <div className={style.input}>
-              <Input value={formProduct.name} name='name' label={"Name of goods"} type={"input"} onChange={handleChange} />
+              <Input value={formProduct.name} name='name' label={"Name of goods"} type={"input"} onChange={handleChange} placeholder={initial.name} />
             </div>
           </div>
           <div className={style.subSect}>
             <p>Item details</p>
             <div className={style.line} />
             <div className={style.input}>
-              <Input value={formProduct.price} name='price' label={"Unit price"} type={"number"} min={"0"} onChange={handleChange} />
+              <Input value={formProduct.price} name='price' label={"Unit price"} type={"number"} min={"0"} onChange={handleChange} placeholder={initial.price} />
             </div>
             <div className={style.input}>
-              <Input value={formProduct.stock} name='stock' label={"Stock"} type={"number"} min={"1"} onChange={handleChange} />
+              <Input value={formProduct.stock} name='stock' label={"Stock"} type={"number"} min={"1"} onChange={handleChange} placeholder={initial.stock
+              }/>
             </div>
             <div>
               <legend className={style.legend}>Stock</legend>
@@ -148,7 +167,7 @@ const SellingProd = () => {
           <div className={style.subSect}>
             <p>Description</p>
             <div className={style.line} />
-            <textarea name="desc" value={formProduct.desc} className={style.desc} onChange={handleChange} />
+            <textarea name="desc" value={formProduct.desc} className={style.desc} onChange={handleChange} placeholder={initial.description}/>
           </div>
           <div className={style.submit}>
             <Button type={'submit'} title={"submit"} className={style.submitButt} />
@@ -160,4 +179,4 @@ const SellingProd = () => {
   );
 };
 
-export default SellingProd;
+export default EditProduct;

@@ -1,12 +1,18 @@
 .wraper {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     display: flex;
     flex-direction: row;
     padding:10px;
     align-items: center;
     justify-content: center;
+    gap:20px
 }
-
+.wraper p {
+    margin:0;
+}
 .wraper button {
-    margin: 10px
+    margin: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }

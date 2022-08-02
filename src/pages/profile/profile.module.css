@@ -6,6 +6,7 @@ body {
 }
 .container {
     padding-top: 60px;
+    width: 100%;
     height:850px;
     margin:auto;
     display:flex;
@@ -13,16 +14,22 @@ body {
 }
 .sect1{
     padding-top: 100px;
-    padding-left: 12.5%;
-    padding-right: 48px;
+    padding-left: 11.5%;
+    /* padding-right: 5%; */
+    width:30%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(173, 173, 173, 0.7)
 }
 .profile{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+}
+.profileHeader{
+    display: flex;
+    flex-direction: row;
 }
 .profileImg{
     width:61px;
@@ -30,6 +37,8 @@ body {
 }
 .textProfile{
     margin-left: 10px;
+    /* margin-right: 5px; */
+    width:100%;
 }
 .textProfile p{
     display: flex;
@@ -37,17 +46,47 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.textProfile span{
+    font-size: 14px;
+}
+.profileNav{
+    margin-top: 40px;
+    /* background-color: aqua; */
+    width:90%;
+    display: flex;
+    flex-direction: column;
+}
+.profileNav div{
+    margin: 5px 0 5px 0;
+    border:1px solid rgba(173, 173, 173, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.profileNav div:hover{
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+    transform: translateY(1px);
+}
+.profileNav div p{
+    padding:10px;
+    margin:0;
+}
+.editProfile{
+    background-color: #DB3022;
+    color:#F5F5F5;
+}
 .sect2{
     padding-right: 10%;
+    width:60%;
 }
 .subSect{
     background-color: #fff;
-    width: 800px;
-    margin-left: 50px;
+    width: 750px;
+    margin-left: 5%;
     margin-bottom: 25px;
-    margin-top:25px;
+    margin-top:13%;
     padding: 30px;
-    border-radius: 4px;
+    border-radius: 5px;
     box-shadow: 0px 0px 20px rgba(173, 173, 173, 0.7)
 }
 .subSect h2{
@@ -76,7 +115,7 @@ body {
 .genderRadio{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 .legend{

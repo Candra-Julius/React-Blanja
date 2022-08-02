@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
+  const [isLoggin, setIsLoggin] = useState(false)
   const [formLogin, setFormLogin] = useState({
     email: '',
     password: '',
@@ -19,9 +20,14 @@ const Login = () => {
       [e.target.name]: e.target.value
     })
   }
-  const handlelogin = (e)=> {
+  const handlelogin = async(e)=> {
     e.preventDefault();
-    dispatch(loginUser(formLogin, navigate))
+    setIsLoggin(true)
+    console.log(isLoggin)
+    setTimeout(()=>{
+      dispatch(loginUser(formLogin, navigate))
+    }, '500')
+    
   }
 
   return (
@@ -57,7 +63,12 @@ const Login = () => {
             />
           </li>
         </ul>
-        <button type="submit" className={style.button}>Primary</button>
+        {!isLoggin?
+          <button type="submit" className={style.button} >Login</button>
+        :
+          <button type="submit" className={`${style.button} ${style.buttonDiss}`} disabled >Please Wait. . .</button>
+      }
+        
       </form>
       <p>Don't have a Tokopedia account? <a href="../Register">Register</a></p>
     </div>

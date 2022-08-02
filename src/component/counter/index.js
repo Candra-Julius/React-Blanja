@@ -14,12 +14,10 @@ const Counter = () => {
         }
     };
     return (
-        <div className="wraper">
         <div className={styles.wraper}>
             <button onClick={handleDecrement}>-</button>
             <p>{count}</p>
             <button onClick={handleIncrement}>+</button>
-        </div>
         </div>
     );
 };

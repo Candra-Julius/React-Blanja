@@ -1,7 +1,7 @@
 .input{
     display:flex;
     flex-direction:row;
-    justify-content: start ;
+    justify-content: flex-start ;
     align-items: center;
     color:#9B9B9B;
 }
@@ -19,5 +19,4 @@
     margin-top:8px;
     padding:20px;
     margin-bottom: 30px;
-    color: #9B9B9B;
 }
