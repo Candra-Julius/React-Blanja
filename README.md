@@ -49,8 +49,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Create a Node.js app for building Hire Job RESTful APIs using Express.
-DoveChat is a simple web chating that allow users to send message privately to other users
+Blanja is a simple e-commerce that allow users to buy anything that he want anytime anywhere.
 
 ### Built With
 This app was built with some technologies below:
@@ -79,7 +78,7 @@ git clone https://github.com/Candra-Julius/DoveChat-FE.git
 ```
 - Go To Folder Repo
 ```
-cd DoveChat-FE
+cd React-Blanja
 ```
 - Install Module
 ```
