@@ -42,7 +42,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#related-project">Related Project</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#our-team">Contact</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
