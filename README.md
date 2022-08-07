@@ -1,14 +1,9 @@
-# DoveChat
+# Blanja
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/Candra-Julius/Cafein-BackEnd">
-    <img src="https://res.cloudinary.com/candrajulius/image/upload/v1659877666/readme/Login_nmf7et.jpg" alt="Logo" width="150px">
-  </a>
 
-  <h3 align="center">DoveChat FE</h3>
+  <h3 align="center">Blanja FE</h3>
 
   <p align="center">
     <br />
@@ -124,13 +119,13 @@ Contributions are what make the open source community such an amazing place to b
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Related Project
-:rocket: [`Backend DoveChat`](https://github.com/Candra-Julius/DoveChat-BE)
+:rocket: [`Backend Blanja`](https://github.com/Candra-Julius/BLANJAeComemerce)
 
-:rocket: [`Frontend DoveChat`](https://github.com/Candra-Julius/DoveChat-FE)
+:rocket: [`Frontend Blanja`](https://github.com/Candra-Julius/React-Blanja)
 
-:rocket: [`Web Service`](https://dove-chat.herokuapp.com/)
+:rocket: [`Web Service`](https://pijarblanja.herokuapp.com/)
 
-:rocket: [`Demo DoveChat`](https://dove-chat-fe.vercel.app/login)
+:rocket: [`Demo Blanja`](https://blanja-62o3pzcpg-candra-julius.vercel.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
