@@ -12,9 +12,9 @@
     <br />
     <a href="https://dove-chat.herokuapp.com/">View Web Service</a>
     ·
-    <a href="https://github.com/Candra-Julius/DoveChat-FE/issues">Report Bug</a>
+    <a href="https://github.com/Candra-Julius/React-Blanja/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Candra-Julius/DoveChat-FE/issues">Request Feature</a>
+    <a href="https://github.com/Candra-Julius/React-Blanja/issues">Request Feature</a>
   </p>
 
 </div>
@@ -48,7 +48,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Blanja is a simple e-commerce that allow users to buy anything that he want anytime anywhere.
+Blanja is one of portfolio project from PijarCamp, a website allow you either to buy or sell anything that you want anytime anywhere. this website was created using PERN Stack.
 
 ### Built With
 This app was built with some technologies below:
@@ -73,7 +73,7 @@ This is an example of how to list things you need to use the software and how to
 
 - Clone the Repo
 ```
-git clone https://github.com/Candra-Julius/DoveChat-FE.git
+git clone https://github.com/Candra-Julius/React-Blanja.git
 ```
 - Go To Folder Repo
 ```
@@ -116,17 +116,6 @@ Contributions are what make the open source community such an amazing place to b
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Related Project
-:rocket: [`Backend Blanja`](https://github.com/Candra-Julius/BLANJAeComemerce)
-
-:rocket: [`Frontend Blanja`](https://github.com/Candra-Julius/React-Blanja)
-
-:rocket: [`Web Service`](https://pijarblanja.herokuapp.com/)
-
-:rocket: [`Demo Blanja`](https://blanja-62o3pzcpg-candra-julius.vercel.app/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Screenshoots
 
 <p align="center" display=flex>
@@ -151,7 +140,7 @@ Contributions are what make the open source community such an amazing place to b
   </tr>
    <tr>
     <td><image src="https://res.cloudinary.com/candrajulius/image/upload/v1659883748/readme/Dove-Chat/Posted_Product_List_iktrvv.jpg" alt="Posted" width=100%></td>
-    <td><image src="https://res.cloudinary.com/candrajulius/image/upload/v1659883749/readme/Dove-Chat/Selling_form_jjx3i9.jpg" alt="Selling Form" width=100%/></td>
+    <td><image src="https://res.cloudinary.com/candrajulius/image/upload/v1660002068/readme/Dove-Chat/Selling_form_umoqmj.png" alt="Selling Form" width=100%/></td>
   </tr>
   <tr>
     <td>Posted Product Page</td>
@@ -168,6 +157,17 @@ Contributions are what make the open source community such an amazing place to b
 </table>
       
 </p>
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Related Project
+:rocket: [`Backend Blanja`](https://github.com/Candra-Julius/BLANJAeComemerce)
+
+:rocket: [`Frontend Blanja`](https://github.com/Candra-Julius/React-Blanja)
+
+:rocket: [`Web Service`](https://pijarblanja.herokuapp.com/)
+
+:rocket: [`Demo Blanja`](https://blanja-62o3pzcpg-candra-julius.vercel.app/)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License
